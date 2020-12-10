@@ -1,0 +1,102 @@
+html,
+body,
+div,
+main {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 50px auto;
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+}
+main h1 {
+  font-size: 1.2rem;
+}
+div#container {
+  max-width: 300px;
+  width: 100%;
+  margin: 25px auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #202020;
+  background-color: #e5e5e5;
+}
+div#container div.num {
+  border: 1px solid #000;
+}
+div#container div.left {
+  margin: 10px 0 10px 10px;
+}
+div#container div.center {
+  margin: 10px 10px;
+}
+div#container div.right {
+  margin: 10px 10px 10px 0;
+}
+div#button {
+  max-width: 320px;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px auto;
+}
+div#button button#control {
+  border: none;
+  outline: none;
+  max-width: 150px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  background-color: #c03030;
+  border: 1px solid #303030;
+  border-radius: 3px;
+}
+div#button button#control:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 3px #808080;
+}
+div#result {
+  max-width: 320px;
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+div#result div {
+  margin: 10px auto;
+  text-align: center;
+}
+div#result div#message {
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.lost {
+  box-shadow: 0 0 3px 3px #f53030;
+}
+.win {
+  box-shadow: 0 0 3px 3px #30f530;
+}
+
+@media (min-width: 427px) {
+  main h1 {
+    font-size: 1.6rem;
+  }
+  div#result div#message {
+    font-size: 1.5rem;
+  }
+}
