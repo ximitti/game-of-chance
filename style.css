@@ -41,6 +41,7 @@ div#container div.center {
 div#container div.right {
   margin: 10px 10px 10px 0;
 }
+
 div#button {
   max-width: 320px;
   width: 100%;
@@ -49,6 +50,7 @@ div#button {
   padding: 10px;
   margin: 5px auto;
 }
+
 div#button button#control {
   border: none;
   outline: none;
@@ -62,10 +64,12 @@ div#button button#control {
   border: 1px solid #303030;
   border-radius: 3px;
 }
+
 div#button button#control:hover {
   cursor: pointer;
   box-shadow: 0 0 5px 3px #808080;
 }
+
 div#result {
   max-width: 320px;
   width: 100%;
@@ -75,10 +79,33 @@ div#result {
   align-items: center;
   justify-content: center;
 }
-div#result div {
+
+div#score {
+  max-width: 300px;
+  width: 100%;
   margin: 10px auto;
-  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
 }
+
+div.label {
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 0 0 5px;
+  font-size: 1.3rem;
+}
+
+div.score {
+  max-width: 50px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 0 0 0 5px;
+}
+
 div#result div#message {
   margin: 10px auto;
   padding: 5px;

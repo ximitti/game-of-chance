@@ -10,12 +10,24 @@
     <main>
       <h1>Máquina Caça-Níquel</h1>
       <div id="container">
-        <div class="num left"><img src="./img/0.png" name="left" /></div>
-        <div class="num center"><img src="./img/0.png" name="center" /></div>
-        <div class="num right"><img src="./img/0.png" name="right" /></div>
+        <div class="num left">
+          <img src="./img/0.png" id="left" name="left" />
+        </div>
+        <div class="num center">
+          <img src="./img/0.png" id="center" name="center" />
+        </div>
+        <div class="num right">
+          <img src="./img/0.png" id="right" name="right" />
+        </div>
       </div>
       <div id="button"><button id="control">Jogar</button></div>
       <div id="result">
+        <div id="score">
+          <div class="label try">Tentativas:</div>
+          <div id="try" class="score try">0</div>
+          <div class="label wins">Vitórias:</div>
+          <div id="wins" class="score wins">0</div>
+        </div>
         <div id="message"></div>
       </div>
     </main>
